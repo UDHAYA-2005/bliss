@@ -1,0 +1,179 @@
+/* src/components/Footer.css */
+
+/* Basic footer styling */
+.footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer row container */
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+
+  }
+  
+  /* Footer column styling */
+  .footer-column {
+    flex: 1 1 calc(25% - 30px); /* Distribute 4 columns with space in between */
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  /* Company name and social media icons */
+  .company-name ul{
+    display: inline;
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+
+  .fobli {    font-size: 18px; /* Set the font size of the link */
+    font-weight: bold; /* Make the text bold */
+    color: #000000; /* Set the text color */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Allow it to behave like a block element */
+    text-align: center; /* Center the text within the link */
+  }
+  .social-media {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer links */
+  .footer-column h2 {
+    font-size: 1.6rem;
+    color: #ff7e5f;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column a:hover {
+    color: #ff7e5f;
+  }
+  
+  /* Contact button */
+  .contact-button {
+    padding: 12px 20px;
+    background-color: #ff7e5f;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #e85a4f;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .footer-column {
+      flex: 1 1 100%; /* Stack the columns on small screens */
+      margin-bottom: 30px;
+    }
+  
+    .footer-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-media {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .footer-column h2 {
+      text-align: center;
+    }
+  
+    .footer-column ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column ul li {
+      margin-bottom: 15px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .logocont {
+    float:  left;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    align-items: center; /* Vertically align the content in the grid */
+  }
+  
+  .logoimg {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+     /* Center the image vertically */
+  }
+  
+  .logoimg img {
+    width:4rem; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; 
+    /* Optional: Limit the maximum size of the image */
+  }
+  
+  .logohead {
+    display: flex;
+    justify-content: center; /* Center the heading horizontally */
+    align-items: center; /* Center the heading vertically */
+  }
+  
+  .logohead h2 {
+    font-size: 2rem; /* Adjust the heading size */
+    text-align: center; /* Ensure the heading text is centered */
+    color: #000000; /* Set the text color */
+  }
+  
+  

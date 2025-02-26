@@ -1,0 +1,164 @@
+/* General styling for the navbar */
+.navbar {
+  overflow: hidden;
+  background-color:transparent;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 5rem; /* Adjusted height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+  
+}
+
+.navbaritem {
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+ }
+ 
+
+/* Logo styling */
+.logo img {
+  width: 150px; 
+  margin-top: 35px;
+
+ 
+}
+
+/* Navbar links container */
+.nav-links {
+  display: flex;
+  gap: 40px; /* Space between links */
+  list-style: none;
+  margin: 0; /* Remove default list margin */
+  flex-wrap: wrap; /* Allow links to wrap in smaller screen sizes */
+}
+
+/* Styling for the nav items */
+.nav-item {
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Styling for the links */
+.nav-item a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the links */
+.nav-item a:hover {
+  background-color: #555; /* Hover effect */
+  border-radius: 5px;
+}
+
+/* Button on the right (with 30px space to the left) */
+.footerbut {
+  padding: 10px 20px;
+  background-color: #3305ef;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.footerbut:hover {
+  background-color: #ffb60a; /* Darker blue on hover */
+}
+
+/* Mobile-specific styling (burger menu) */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 70px; /* Position the burger menu correctly */
+  right: 20px;
+}
+
+.burger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* When the navbar is in mobile mode */
+@media (max-width: 1024px) {
+  /* Stack the navbar items when screen width is less than 1024px */
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    height: auto; /* Adjust height to fit content */
+    padding: 15px 20px; /* Adjust padding */
+  }
+
+  /* Logo and links will be stacked on smaller screens */
+  .nav-links {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    gap: 10px; /* Adjust gap between links */
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-item {
+    padding: 0; /* Remove left padding */
+    font-size: 16px; /* Adjust font size */
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Make the burger menu visible on tablet and smaller screens */
+  .burger-menu {
+    display: flex;
+  }
+
+  /* Button style adjustments for smaller screens */
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Responsive design for screens smaller than 768px (Mobile devices) */
+@media (max-width: 768px) {
+  /* Navbar links should be hidden by default on mobile */
+  .nav-links {
+    display: none; /* Hide links on mobile by default */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Show links when the menu is toggled (active class added) */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Adjust button to fit on mobile */
+  .nav-button {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-bottom: 15px;
+    font-size: 16px; /* Slightly smaller font size for mobile */
+  }
+}

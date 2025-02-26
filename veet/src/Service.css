@@ -1,0 +1,691 @@
+/* General Styles */
+.hero-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; /* Ensures the image covers the section without distorting */
+}
+
+.hero-content {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  padding-right: 90px;
+  background-color: transparent;
+}
+
+.black-text {
+  color: rgb(255, 255, 255);
+  font-family: "Merriweather", serif;
+}
+
+.yellow-text {
+  margin-left: 10px;
+  color: rgb(247, 164, 9);
+  font-family: "Merriweather", serif;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.hero p {
+  font-size: 1rem;
+  font-family: "Redressed", cursive;
+}
+
+.divider {
+  width: 100%;
+  height: 0px;
+  margin: 3px 0;
+}
+
+.container1 {
+  top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(146, 145, 145, 0.1);
+  padding: 30px;
+  width: 100%;
+}
+
+/* Left content styling */
+.right-content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-content1 h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.right-content1 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.know-more-btn1 {
+  background-color: white;
+  border: 2px solid black; /* Black border */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 20px; /* Optional: slight rounding */
+}
+
+.know-more-btn1:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+/* Styling for the Book Now button */
+.book-now-btn1 {
+  background: radial-gradient(#3F81CD, #683FEA);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-flex;
+  border-radius: 25px; /* Rounded corners */
+}
+
+/* Right image styling */
+.left-img1 {
+  max-width: 100%;
+}
+
+.left-img1 img {
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* Grid container 2 */
+.container2 {
+  top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  border-top: #ff0000;
+}
+
+/* Left side image */
+.right-img2 img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right content styling */
+.left-content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-content2 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.left-content2 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Inline buttons container */
+.buttons-container2 {
+  display: flex;
+  gap: 10px;
+}
+
+.know-more-btn2 {
+  background-color: white;
+  border: 2px solid black; /* Black border */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 4px; /* Optional: slight rounding */
+}
+
+.know-more-btn2:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Styling for the Book Now button */
+.book-now-btn2 {
+  background: radial-gradient(#3F81CD, #683FEA);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Container 3 */
+.container3 {
+  top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+}
+
+/* Left content styling */
+.right-content3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-content3 h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.right-content3 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.know-more-btn3 {
+  background-color: white;
+  border: 2px solid black; /* Black border */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 20px; /* Optional: slight rounding */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.know-more-btn3:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Styling for the Book Now button */
+.book-now-btn3 {
+  background: radial-gradient(#3F81CD, #683FEA);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Right image styling */
+.left-img3 {
+  max-width: 100%;
+}
+
+.left-img3 img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+/* Container 4 */
+.container4 {
+  top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  border-top: #ff0000;
+}
+
+/* Left side image */
+.right-img4 img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right content styling */
+.left-content4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-content4 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.left-content4 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Inline buttons container */
+.buttons-container4 {
+  display: flex;
+  gap: 10px;
+}
+
+.know-more-btn4 {
+  background-color: white;
+  border: 2px solid black; /* Black border */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 4px; /* Optional: slight rounding */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.know-more-btn4:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Styling for the Book Now button */
+.book-now-btn4 {
+  background: radial-gradient(#3F81CD, #683FEA);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Container 5 */
+.container5 {
+  top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+}
+
+/* Left content styling */
+.right-content5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-content5 h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.right-content5 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.know-more-btn5 {
+  background-color: white;
+  border: 2px solid black; /* Black border */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 20px; /* Optional: slight rounding */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.know-more-btn5:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Styling for the Book Now button */
+.book-now-btn5 {
+  background: radial-gradient(#3F81CD, #683FEA);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Right image styling */
+.left-img5 {
+  max-width: 100%;
+}
+
+.left-img5 img {
+  width: 60%;
+  border-radius: 8px;
+}
+
+/* Container 6 */
+.container6 {
+  top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  border-top: #ff0000;
+}
+
+/* Left side image */
+.right-img6 img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right content styling */
+.left-content6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-content6 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.left-content6 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Inline buttons container */
+.buttons-container6 {
+  display: flex;
+  gap: 10px;
+}
+
+.know-more-btn6 {
+  background-color: white;
+  border: 2px solid black; /* Black border */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 4px; /* Optional: slight rounding */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.know-more-btn6:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Styling for the Book Now button */
+.book-now-btn6 {
+  background: radial-gradient(#3F81CD, #683FEA);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Container 7 */
+.container7 {
+  top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+}
+
+/* Left content styling */
+.right-content7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-content7 h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.right-content7 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.know-more-btn7 {
+  background-color: white;
+  border: 2px solid black; /* Black border */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 20px; /* Optional: slight rounding */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.know-more-btn7:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Styling for the Book Now button */
+.book-now-btn7 {
+  background: radial-gradient(#3F81CD, #683FEA);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-block;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Right image styling */
+.left-img7 {
+  max-width: 100%;
+}
+
+.left-img7 img {
+  width: 60%;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .container5,
+  .container6,
+  .container7 {
+      grid-template-columns: 1fr; /* Stack columns on smaller screens */
+      gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .hero h1 {
+      font-size: 2.2rem; /* Smaller heading */
+  }
+
+  .hero p {
+      font-size: 0.9rem; /* Smaller paragraph */
+  }
+
+  .right-content1 h1,
+  .right-content2 h1,
+  .right-content3 h1,
+  .right-content4 h1,
+  .right-content5 h1,
+  .right-content6 h1,
+  .right-content7 h1 {
+      font-size: 1.8em; /* Smaller heading */
+  }
+
+  .right-content1 p,
+  .right-content2 p,
+  .right-content3 p,
+  .right-content4 p,
+  .right-content5 p,
+  .right-content6 p,
+  .right-content7 p {
+      font-size: 1em; /* Smaller paragraph */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .hero p {
+      font-size: 0.8rem; /* Further reduce paragraph size */
+  }
+
+  .know-more-btn1,
+  .know-more-btn2,
+  .know-more-btn3,
+  .know-more-btn4,
+  .know-more-btn5,
+  .know-more-btn6,
+  .know-more-btn7 {
+      font-size: 14px; /* Smaller button text */
+  }
+
+  .book-now-btn1,
+  .book-now-btn2,
+  .book-now-btn3,
+  .book-now-btn4,
+  .book-now-btn5,
+  .book-now-btn6,
+  .book-now-btn7 {
+      font-size: 14px; /* Smaller button text */
+  }
+
+  .left-img1 img,
+  .left-img2 img,
+  .left-img3 img,
+  .left-img4 img,
+  .left-img5 img,
+  .left-img6 img,
+  .left-img7 img {
+      width: 100%; /* Full width for images */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .hero p {
+      font-size: 0.7rem; /* Further reduce paragraph size */
+  }
+
+  .know-more-btn1,
+  .know-more-btn2,
+  .know-more-btn3,
+  .know-more-btn4,
+  .know-more-btn5,
+  .know-more-btn6,
+  .know-more-btn7 {
+      padding: 8px 15px; /* Smaller button padding */
+  }
+
+  .book-now-btn1,
+  .book-now-btn2,
+  .book-now-btn3,
+  .book-now-btn4,
+  .book-now-btn5,
+  .book-now-btn6,
+  .book-now-btn7 {
+      padding: 8px 15px; /* Smaller button padding */
+  }
+}

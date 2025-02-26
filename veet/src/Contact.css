@@ -1,0 +1,332 @@
+/* Full-width grid container */
+.grid-container {
+  display: grid;
+  height: 15rem; /* Full height of the section */
+  background-image: url('src/assets/img/contactheadimg.jpg'); /* Background image */
+  background-size: cover; /* Cover the whole area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+  background-color: #052aff;
+}
+
+/* Styling for content */
+.content-box {
+  width: 100rem;
+  background-color: transparent; /* Semi-transparent background to make text readable */
+  padding: 20px;
+  border-radius: 10px; /* Optional rounded corners */
+  max-width: 600px; /* Limit the width of content */
+}
+
+/* Content box heading */
+.content-box h1 {
+  color: #ccc;
+  padding-top: 3rem;
+  padding-left: 25rem;
+  font-size: 2rem;
+}
+
+.content-box b {
+  color: #ffc400;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Grid container to create left and right columns */
+.grid-container1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
+  gap: 150px; /* Space between the columns */
+  align-items: center; /* Center content vertically */
+  padding: 20px;
+  height: 45vh; /* Full viewport height */
+  position: relative;
+}
+
+/* Styling for the text box */
+.text-box1 {
+  padding: 20px;
+  background-color: transparent; /* Light background for readability */
+  border-radius: 10px;
+}
+
+.text-box1 p {
+  font-size: 2.5rem;
+  width: 40rem;
+}
+
+/* Styling for the image box */
+.image-box1 img {
+  padding-right: 1px;
+  width: 30rem;
+  height: 20rem; /* Ensure the image maintains its aspect ratio */
+  border-radius: 10px; /* Optional rounded corners for image */
+}
+
+/* Optional responsive design: Stacks the columns on smaller screens */
+@media (max-width: 768px) {
+  .grid-container1 {
+      grid-template-columns: 1fr; /* Stack content on top of each other */
+      gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .image-box1 img {
+      max-width: 100%; /* Ensure image stays responsive */
+  }
+
+  .text-box1 p {
+      font-size: 1.5rem; /* Smaller text size */
+      width: auto; /* Allow text to take full width */
+  }
+}
+
+.grid-container2 {
+  height: 20rem;
+  display: flex;
+  justify-content: space-between; /* Space between text and button */
+  align-items: center; 
+  background-image: url("src/assets/img/contf.jpeg"); /* Background image */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-box2 {
+  flex-grow: 1; /* This makes sure the text takes up the available space */
+}
+
+.cta-button2 {
+  margin-top: 2rem;
+  margin-left: 1rem; /* Gap between text and button */
+  height: 3rem;
+  width: 10rem;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+
+/* Hover effect for the button */
+.cta-button2:hover {
+  background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Focus effect for accessibility */
+.cta-button2:focus {
+  outline: 2px solid #333; /* Adds a focus outline */
+}
+
+.text-box2 {
+  padding-left: 25%;
+  padding-top: 10rem;
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-box2 p {
+  font-size: 1.7rem;
+}
+
+a {
+  color: #ccc;
+}
+
+a:hover {
+  color: linear-gradient(to right, #f2fdf2, #dbff0d); 
+}
+
+/* Contact.css */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 5rem;
+}
+
+.left-box {
+  background-color: #ffffff;
+  padding-left: 5rem;
+  width: 40rem;
+}
+
+.right-box {
+  background-color: #09165f;
+  width: 48%;
+  border-radius: 30px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.name-row {
+  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-row {
+  gap: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-row input {
+  width: 50%;
+}
+
+.contact-row input {
+  width: 50%;
+}
+
+.message-row textarea {
+  height: 150px;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.address-section {
+  padding-left: 30px;
+  background-color: #09165f;
+  color: #ccc;
+  height: 70%;
+  border-radius: 30px;
+}
+
+.social-media-section {
+  padding-left: 30px;
+  background-color: #FAB440;
+  height: 10rem;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .grid-container1 {
+      grid-template-columns: 1fr; /* Stack columns on smaller screens */
+      gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .content-box {
+      width: 100%; /* Full width for content box */
+      padding: 10px; /* Adjust padding */
+  }
+
+  .content-box h1 {
+      padding-left: 0; /* Remove left padding */
+      font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .text-box1 p {
+      font-size: 1.5rem; /* Smaller text size */
+      width: auto; /* Allow text to take full width */
+  }
+
+  .text-box2 {
+      padding-left: 5%; /* Adjust padding */
+      padding-top: 5rem; /* Adjust padding */
+  }
+
+  .text-box2 p {
+      font-size: 1.5rem; /* Smaller text size */
+  }
+
+  .left-box {
+      width: 100%; /* Full width for left box */
+  }
+
+  .right-box {
+      width: 100%; /* Full width for right box */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+      height: auto; /* Allow height to adjust */
+  }
+
+  .grid-container1 {
+      grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+
+  .image-box1 img {
+      max-width: 100%; /* Ensure image stays responsive */
+  }
+
+  .text-box1 p {
+      font-size: 1.5rem; /* Smaller text size */
+  }
+
+  .cta-button2 {
+      width: 100%; /* Full width for button */
+  }
+
+  .text-box2 {
+      flex-direction: column; /* Stack text and button vertically */
+      padding-left: 0; /* Remove left padding */
+  }
+
+  .text-box2 p {
+      font-size: 1.5rem; /* Smaller text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+      height: auto; /* Allow height to adjust */
+  }
+
+  .grid-container1 {
+      gap: 10px; /* Reduce gap */
+  }
+
+  .text-box1 p {
+      font-size: 1.2rem; /* Further reduce text size */
+  }
+
+  .text-box2 p {
+      font-size: 1.2rem; /* Further reduce text size */
+  }
+
+  .submit-btn {
+      padding: 8px 15px; /* Smaller button padding */
+  }
+
+  .cta-button2 {
+      padding: 8px 15px; /* Smaller button padding */
+  }
+}
